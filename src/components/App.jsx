@@ -1,6 +1,6 @@
 import Header from "./Header";
-import "../scss/App.scss";
-import ¨{ useState } from "react";
+//import "../scss/App.scss";
+//import { useState } from "react";
 
 
 function App() {
@@ -8,6 +8,8 @@ function App() {
 
     <>
     <Header />
+
+    <h1>Hola Mundo</h1>
     </>
       
     
