@@ -1,19 +1,11 @@
-import Header from "./Header";
-//import "../scss/App.scss";
-//import { useState } from "react";
+import "../scss/App.scss";
+import Header from "./Header"
 
 
 function App() {
-  return (
-
-    <>
-    <Header />
-
-    <h1>Hola Mundo</h1>
-    </>
-      
-    
-  )
+    return (
+        <Header />
+    )
 }
 
 export default App
