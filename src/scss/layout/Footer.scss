@@ -40,9 +40,6 @@
     //color: $colorFont;
 }
 
-.fa-cat{
-//color: $colorFont
-}
 
 .copy{
 //color: $colorFont
@@ -53,23 +50,10 @@
     
 }
 
-.pushfoot{
-    width: 100px;
-    display: none;
+.footerlogo{
+    width: 120px;
+    
 
 }
  
 
-@media (min-width: 1000px) {
-    .footer{   
-    height: 101px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 131px 20px 131px;
-      }
-    .pushfoot{
-        display: block;
-    }
-}

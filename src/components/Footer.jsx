@@ -21,12 +21,12 @@ function Footer() {
         </a>
     </section>
 
-    <img className="footer__logo" src={logofoot} alt="logo" />
+    <img className="footerlogo" src={logofoot} alt="logo" />
 
         <section class="copiright icons">
          <i className="fa-solid fa-copyright"></i>
-         <a className="copy" href="index.html">PURR Skills, 2024</a>
-         <i className="fa-solid fa-cat"></i>
+         <a className="copy" href="index.html"> All in Crew, 2024 </a>
+         <i className="fa-regular fa-face-smile"></i>
         </section>
        
         </footer    >   
