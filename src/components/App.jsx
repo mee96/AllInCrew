@@ -1,6 +1,6 @@
 import "../scss/App.scss";
 import Header from "./Header"
-import Who from "./Who"
+import CrewMembers from "./CrewMembers";
 import Footer from "./Footer";  
 
 
@@ -11,8 +11,8 @@ function App() {
         <Header />
         <main className="body">
             <h1>cosas allincrewnisticas</h1>
-            <Who />
             
+         <CrewMembers />   
 
         </main>
         <Footer />

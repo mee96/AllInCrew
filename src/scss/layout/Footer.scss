@@ -1,59 +1,70 @@
-
 @import '../core/variables';
 
 .footer {
-    //background-color: $colorFont4;
-    //color: $colorFont2;
-    //font-family: $fontText1;
+    // LAYOUT BASE
+    // Fons igual que el Header: Taronja Vius ($color1)
+    background-color: $color1; 
+    color: $color3; // Color de text: Clar (Lila/Blanc Trencant)
+    font-family: $fontText2; 
+    
     height: 100px;
     padding: 20px;
-    bottom: 0;
-    left: 0;
     width: 100%;
+    
+    // ALINEACIÓ
     display: flex;
-    background-color: $color1;
-}
-
-.fa-brands {
-    margin-top: 31px;
-    height: 22px;
-    //color: $colorFont2;
-    padding: 2.5px;
-&:hover {
-        //color: $colorFont5;
-        transform: scale(1.3) rotate(10deg);
+    justify-content: space-around; 
+    align-items: center; 
+    
+    @media (max-width: 600px) {
+        height: auto;
+        flex-direction: column; 
+        padding: 15px 0;
+        gap: 10px;
     }
 }
 
-.fa-duotone{
-    margin-top: 31px;
-    height: 22px;
-    //color: $colorFont2;
-    padding: 2.5px;
-&:hover {
-        //color: $colorFont5;
-        transform: scale(1.3) rotate(10deg) ;
+.footerlogo {
+    width: 100px;
+    object-fit: contain; 
+}
+
+// ESTILS DE LES ICONES
+.fa-brands,
+.fa-duotone,
+.fa-solid,
+.fa-regular {
+    color: $color3; // Color base de les icones
+    font-size: 22px; 
+    margin: 0 5px; 
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+    &:hover {
+        // En hover, utilitzem un color d'accent diferent, com el Groc ($color7) o el Rosa Suau ($color5)
+        color: $color7; // Canviat a Groc per destacar sobre el Taronja
+        transform: scale(1.3) rotate(5deg);
     }
 }
 
-.fa-copyright{
-    //color: $colorFont;
+.rrss.icons {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
 }
 
-
-.copy{
-//color: $colorFont
+.copiright.icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
 }
 
-.icons {
-    margin-left: 50px;
+.copy {
+    color: $color3; 
+    text-decoration: none;
     
+    &:hover {
+        color: $color5; // Rosa Suau
+    }
 }
-
-.footerlogo{
-    width: 120px;
-    
-
-}
- 
-
