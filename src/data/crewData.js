@@ -1,4 +1,4 @@
-//import carmePhoto from '../assets/images/members/carme_profile.jpg';
+
 
 const crewMembers = [
     {

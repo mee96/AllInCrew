@@ -3,12 +3,12 @@
 .crew-section {
     padding: 40px 20px;
     text-align: center;
-    background-color: $color3; /* Fons clar per fer destacar les targetes */
+    background-color: $color3; 
     font-family: $fontText2;
 
     &__title {
         font-family: $fontText1;
-        color: $color2; /* Lila Fosc */
+        color: $color2; 
         font-size: 2.5rem;
         margin-bottom: 5px;
     }
@@ -21,21 +21,42 @@
         margin-right: auto;
     }
 
-    &__container {
-        display: grid;
-        gap: 30px; /* Espai entre les targetes */
+    
+    &__container.swiper {
+        padding-bottom: 50px; 
+    }
+
+  
+    
+    .swiper-pagination-bullet {
+        background: $color2; 
+        opacity: 0.7;
+    }
+    
+    .swiper-pagination-bullet-active {
+        background: $color1 ; 
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $color2 ; 
+        transition: color 0.3s;
         
-        /* ESCRITORI: 4 columnes, màxim 300px d'ample per targeta */
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        
-        /* TAULETA: 3 columnes */
-        @media (max-width: 1024px) {
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        &:hover {
+            color: $color1 ; 
         }
         
-        /* MÒBIL: 1 columna, es veurà com una llista o carrusel (si implementes un carrusel JS) */
-        @media (max-width: 600px) {
-            grid-template-columns: 1fr;
+        
+        @media (max-width: 640px) {
+            display: none; 
         }
+    }
+    
+    
+    .swiper-button-next, .swiper-button-prev {
+        top: 40%; 
     }
 }
