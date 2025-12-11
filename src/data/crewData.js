@@ -18,7 +18,7 @@ const crewMembers = [
         photoUrl: "/images/members/victoria_profile.jpg",
         birthday: "21/03/2005",
         mbti: "ENFJ",
-        role: "Lider", 
+        role: " ", 
         facts: ["Protective mother instint", "Flamenco lover"],
         ultGroups: ["IU", "Stray Kids"],
         instagram: "",
